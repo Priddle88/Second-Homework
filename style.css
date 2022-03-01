@@ -47,10 +47,12 @@ body {
     bottom: 80%;
     margin-left: 10px;
     overflow-wrap: break-word;
+    border: 2px solid;
 
 }
 
 @media screen and (max-width:700px) {
+    /*
     .top img {
         position: relative;
         display: flex;
@@ -61,7 +63,28 @@ body {
         display: flex;
         flex-wrap: wrap;
         margin-top: -10%;
-        
+        position: absolute;
     }
-    
+    */
+    .top img {
+        position: absolute;
+        left: 24px;
+        top: 187px;
+        width: 135px;
+        border: 2px solid;
+    }
+}
+
+@media screen and (max-width:420px){
+    .top img {
+        position: absolute;
+        left: 11px;
+        top: 112px;
+        width: 135px;
+        border: 2px solid;
+        overflow-wrap: normal;
+    }
+    .links {
+        padding-right: 1.5%;
+    }
 }
