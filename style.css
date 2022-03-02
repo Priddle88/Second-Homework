@@ -41,21 +41,6 @@ a {
     width: 95%;
 }
 
-/*
-.links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 40px;
-    font-size: larger;
-}
-
-#about {
-    position:relative;
-    right: 40px;
-}
-*/
 .top img{
     
     position: absolute;
@@ -67,21 +52,43 @@ a {
     border: 2px solid;
 }
 
+.content {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2%;
+    font-size: 15px;
+    
+}
+
+.topics {
+    text-align: right;
+    padding: 20%;
+    border-right: 4px solid blue;
+    width: 20%;
+}
+
+.content div {
+    margin: 10px;
+}
+
+.content img{
+    width:10%;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @media screen and (max-width:700px) {
-    /*
-    .top img {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        width:min-content;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -10%;
-        position: absolute;
-    }
-    */
     .top img {
         position: absolute;
         left: 16px;
