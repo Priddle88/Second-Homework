@@ -155,4 +155,15 @@ a {
         width: 97%;
     }
     
+    .gd5 {
+        border-right: black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contact {
+        justify-content: flex-end;
+    }
+    
 }
