@@ -120,6 +120,7 @@ a {
 /* Aligning the contact info to be in a row instead of a column */
 .contact {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -148,4 +149,5 @@ a {
     .links {
         padding-right: 1.5%;
     }
+    
 }
