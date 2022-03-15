@@ -11,7 +11,7 @@ body {
     
     border: 4px solid rgb(0, 0, 255);
     width: 95%;
-    background-image: linear-gradient( yellow, green);
+    background-image: linear-gradient( white, black);
     padding-bottom: 1%;
     margin: 2%;
 }
@@ -43,6 +43,7 @@ a {
     width: 95%;
 }
 
+
 /* My picture at the top of the page */
 .top img{
     
@@ -54,6 +55,7 @@ a {
     overflow-wrap: break-word;
     border: 2px solid;
 }
+
 
 /* Main bulk of the content below the header of the page */
 .content {
@@ -67,6 +69,7 @@ a {
     font-size: 20px;
     column-gap: 20px;
     row-gap: 10%;
+    height: 800px;
 }
 
 .gd1 {
@@ -83,7 +86,16 @@ a {
 }
 .gd4 {
     grid-column: 2 / span 2;
-    grid-row: 2;
+    /* grid-row: 2; */
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin: 2%;
+    font-size: 20px;
+    column-gap: 20px;
+    row-gap: 10%;
+    height: 800px;
 }
 .gd5 {
     grid-column: 1;
@@ -110,13 +122,13 @@ a {
 }
 
 .content img{
-    width:10%;
+    width:100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.page {
-    display: flex;
-    align-items: center;
-}
 
 /* Aligning the contact info to be in a row instead of a column */
 .contact {
